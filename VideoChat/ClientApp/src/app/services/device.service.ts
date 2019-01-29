@@ -3,7 +3,9 @@ import { ReplaySubject, Observable } from 'rxjs';
 
 export type Devices = MediaDeviceInfo[];
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class DeviceService {
     $devicesUpdated: Observable<Promise<Devices>>;
 

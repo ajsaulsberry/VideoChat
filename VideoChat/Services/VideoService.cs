@@ -31,7 +31,7 @@ namespace VideoChat.Services
             => new Token(_twilioSettings.AccountSid,
                          _twilioSettings.ApiKey,
                          _twilioSettings.ApiSecret,
-                         identity,
+                         identity ?? Guid.NewGuid().ToString(),
                          grants: new HashSet<IGrant> { new VideoGrant() }).ToJwt();
 
         public async Task<IEnumerable<RoomDetails>> GetAllRoomsAsync()

@@ -16,7 +16,9 @@ export interface NamedRoom {
 
 export type Rooms = NamedRoom[];
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class VideoChatService {
   $roomsUpdated: Observable<boolean>;
 
