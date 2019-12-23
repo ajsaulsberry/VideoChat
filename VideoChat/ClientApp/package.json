@@ -18,21 +18,22 @@
     "@angular/platform-browser-dynamic": "~7.1.4",
     "@angular/router": "~7.1.4",
     "@aspnet/signalr": "1.1.0",
-    "twilio-video": "2.0.0-beta5",
+    "ajv": "^6.10.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "twilio-video": "2.0.0-beta5",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.12.3",
+    "@angular-devkit/build-angular": "^0.803.21",
     "@angular/cli": "~7.1.4",
-    "@angular/compiler-cli": "~7.1.4",
+    "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "~7.1.4",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "^3.7.4"
   }
 }
